@@ -1,15 +1,102 @@
-html{
+:root {
+    --color-naranja: #EB7623;
+}
+
+html {
     font-size: 62.5%;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
-body{
-    font-size: 16px; /* 1 rem equivale a 10px*/
+
+body {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    /* 1 rem equivale a 10px*/
     /* font-family: 'Roboto Mono', monospace; */
 }
-img{
+
+img {
     width: 100%;
 }
+
+
+.home__container {
+    background-image: url('/img/portada.jpeg');
+    background-size: cover;
+    /* La imagen se ajustará para cubrir todo el contenedor */
+    background-position: center 63%;
+    /* Esto asegurará que la parte central de la imagen se muestre */
+    background-repeat: no-repeat;
+    height: 1080px;
+    /* Ajusta la altura del contenedor al tamaño deseado */
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    z-index: 9999;
+    
+    font-size: 24px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 140px;
+}
+
+
+
+header nav .nav.container a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 2rem;
+    /* Increased font size */
+    padding: 10px;
+    border-radius: 5px;
+    /* Added rounded borders */
+    transition: background-color 0.3s;
+    font-weight: lighter;
+    /* Changed font weight to regular */
+}
+
+header nav .nav.container a:hover {
+    background-color: var(--color-naranja);
+    padding: 10px;
+}
+
+.nav__logo {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 2.7rem;
+    cursor: pointer;
+}
+
+.home__container {
+    padding-top: 80px; /* Ajusta según sea necesario */
+    
+}
+
+.home__container h1 {
+    color: white;
+    font-weight: lighter;
+    font-size: 23px;
+    width: 50%;
+    margin: 75px 140px 0;
+    /* Adjust the top margin to increase the space */
+}
+
