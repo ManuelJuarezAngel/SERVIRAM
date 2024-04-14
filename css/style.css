@@ -37,6 +37,16 @@ section{
     margin: 0 auto;
 }
 
+h1{
+    color: var(--blanco);
+    font-weight: bold;
+    font-size: 3rem;
+    width: 50%;
+    margin: 75px 0 0;
+}
+
+
+
 /* NAVBAR */
 .nav-bg {
     width: 100%;
@@ -249,19 +259,14 @@ section{
 }
 
 .home__container {
-    padding: 8rem 3rem;
+    padding: 14rem 3rem;
     max-width: 130rem;
     margin: 0 auto;
 }
 
-.home__container h1 {
-    color: white;
-    font-weight: lighter;
-    font-size: 23px;
-    width: 50%;
-    margin: 75px 0 0;
+.home__container p{
+    color: var(--blanco);
 }
-
 
 /* Servicios */
 .services__container{
