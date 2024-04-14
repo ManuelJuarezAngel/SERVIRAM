@@ -11,28 +11,35 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="#home" class="nav__logo">SERVIRAM</a>
-            <div class="nav container">
+    <div class="nav-bg">
+        <div class="header">
+            <div class="logo">SERVIRAM</div>
+            <div class="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav">
                 <a href="#home">Inicio</a>
                 <a href="#nosotros">Nosotros</a>
                 <a href="#servicios">Servicios</a>
                 <a href="#paquetes">Paquetes</a>
                 <a href="#contacto">Contacto</a>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </div>
+    </div>
+
+
     <main>
-        <section class="home section" id="home">
+        <div class="home section" id="home">
             <div class="home__container">
                 <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a tortor quis ex pellentesque
                     suscipit nec molestie leo. Duis molestie metus id justo gravida suscipit. In ullamcorper aliquet
                     pretium.</h1>
             </div>
-        </section>
+        </div>
         <section id="nosotros"></section>
-        <section class="servicios section" id="servicios">
+        <section class="servicios section s" id="servicios">
             <h2>Servicios</h2>
             <div class="services__container">
                 <div class="service-card">
@@ -91,6 +98,19 @@
         <section id="paquetes"></section>
         <section id="contacto"></section>
     </main>
+
+    <script>
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector(".nav-bg");
+            header.classList.toggle("abajo", window.scrollY >= 700);
+        });
+
+        let menutoggle = document.querySelector(".toggle");
+        menutoggle.onclick = function () {
+            menutoggle.classList.toggle("cambiar");
+        };
+
+    </script>
 </body>
 
 </html>
