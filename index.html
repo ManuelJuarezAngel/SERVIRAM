@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9bb43a87dc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="nav-bg">
+    <div class="nav-bg" data-aos="fade-up">
         <div class="header">
             <div class="logo">SERVIRAM</div>
             <div class="toggle">
@@ -31,16 +33,41 @@
 
 
     <main>
+        <!-- Portada -->
         <div class="home section" id="home">
-            <div class="home__container">
-                <h1>Lorem ipsum dolor sit amet.</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo facilis vero ex necessitatibus in cumque voluptatem quidem. Voluptatibus, ad. Libero?</p>
+            <div class="home__container" data-aos="fade-up">
+                <h1 data-aos="fade-up">Lorem ipsum dolor sit amet.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo facilis vero ex necessitatibus in
+                    cumque voluptatem quidem. Voluptatibus, ad. Libero?</p>
             </div>
         </div>
-        <section id="nosotros"></section>
-        <section class="servicios section s" id="servicios">
-            <h2>Servicios</h2>
-            <div class="services__container">
+        <!-- Nosotros -->
+        <section id="nosotros" >
+            <div class="contain__nosotros" data-aos="fade-up">
+                <div class="container__info">
+                    <h2>● Nosotros</h2>
+                    <div class="nosotros__info">
+                        <div class="info__mision">
+                            <i class="fa-regular fa-flag icon"></i>
+                            <h3>Mision</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, accusantium.</p>
+                        </div>
+                        <div class="info__vision">
+                            <i class="fa-regular fa-eye icon"></i>
+                            <h3>Vision</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, error.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="nosotros__logo">
+                    <img src="img/logo-serviram.png" alt="logo">
+                </div>
+            </div>
+        </section>
+        <!-- Servicios -->
+        <section class="servicios section" id="servicios">
+            <h2 data-aos="fade-up">● Servicios</h2>
+            <div class="services__container" data-aos="fade-up">
                 <div class="service-card">
                     <div class="poster">
                         <img src="img/servicio1.png" />
@@ -94,10 +121,166 @@
                 </div>
             </div>
         </section>
-        <section id="paquetes"></section>
-        <section id="contacto"></section>
+        <section id="paquetes">
+            <h2 data-aos="fade-up">● Paquetes</h2>
+            <div class="container__paquetes" data-aos="fade-up">
+                <div class="paquetes__card">
+                    <div class="card__img">
+                        <img src="img/servicio1.png" alt="">
+                    </div>
+                    <div class="card__info">
+                        <h3>Paquete X</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita minima aspernatur autem
+                            ipsa libero cum est nostrum, id doloremque voluptate consectetur doloribus quisquam, iste
+                            optio debitis, eligendi accusantium itaque perspiciatis repellendus laborum. Fugit at,
+                            laboriosam vitae laborum deleniti inventore unde.</p>
+                        <button>Conocer mas</button>
+                    </div>
+                </div>
+
+                <div class="paquetes__card">
+                    <div class="card__img">
+                        <img src="img/servicio2.png" alt="">
+                    </div>
+                    <div class="card__info">
+                        <h3>Paquete X</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita minima aspernatur autem
+                            ipsa libero cum est nostrum, id doloremque voluptate consectetur doloribus quisquam, iste
+                            optio debitis, eligendi accusantium itaque perspiciatis repellendus laborum. Fugit at,
+                            laboriosam vitae laborum deleniti inventore unde.</p>
+                        <button>Conocer mas</button>
+                    </div>
+                </div>
+
+                <div class="paquetes__card">
+                    <div class="card__img">
+                        <img src="img/servicio3.png" alt="">
+                    </div>
+                    <div class="card__info">
+                        <h3>Paquete X</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita minima aspernatur autem
+                            ipsa libero cum est nostrum, id doloremque voluptate consectetur doloribus quisquam, iste
+                            optio debitis, eligendi accusantium itaque perspiciatis repellendus laborum. Fugit at,
+                            laboriosam vitae laborum deleniti inventore unde.</p>
+                        <button>Conocer mas</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 data-aos="fade-up">● Opiniones</h2>
+            <div class="container__opiniones" data-aos="fade-up">
+                <div class="card__opiniones">
+                    <div class="card__contenido">
+                        <div class="contenido__img">
+                            <img src="img/opinion.jpg" alt="img">
+                        </div>
+                        <div class="contenido__info">
+                            <h3>Fulano</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nam harum quas distinctio
+                                autem consectetur, culpa deserunt voluptates quo sint.</p>
+                            <div class="calificacion">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__contenido">
+                        <div class="contenido__img">
+                            <img src="img/opinion.jpg" alt="img">
+                        </div>
+                        <div class="contenido__info">
+                            <h3>Fulano</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nam harum quas distinctio
+                                autem consectetur, culpa deserunt voluptates quo sint.</p>
+                            <div class="calificacion">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__contenido">
+                        <div class="contenido__img">
+                            <img src="img/opinion.jpg" alt="img">
+                        </div>
+                        <div class="contenido__info">
+                            <h3>Fulano</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nam harum quas distinctio
+                                autem consectetur, culpa deserunt voluptates quo sint.</p>
+                            <div class="calificacion">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacto">
+            <h2 data-aos="fade-up">● Contactanos</h2>
+            <div class="container__form" data-aos="fade-up">
+                <form>
+                    <h3>Envianos tus comentarios</h3> <br>
+                    <div class="input-group">
+                        <label for=""><span>* </span>Nombre completo</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for=""><span>* </span>Servicio Requerido</label>
+                        <input type="text" name="servicio" required>
+                    </div>
+                    <div class="input-group">
+                        <label for=""><span>* </span>Numero de WhatsApp o telefono de contacto</label>
+                        <input type="tel" name="numero" required>
+                    </div>
+                    <div class="input-group">
+                        <label for=""><span>* </span>Email</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <br>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
     </main>
 
+    <footer>
+        <div class="footer__logo" data-aos="fade-up"><p>SERVIRAM</p></div>
+        <div class="footer__info" data-aos="fade-up">
+            <div class="direccion">
+                <h3>Direccion</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit cumque quisquam nihil eius deserunt dignissimos, autem laboriosam dolore neque ullam.</p>
+            </div>
+            <div class="telefonos">
+                <h3>Telefonos</h3>
+                <p>Lorem, ipsum dolor.</p>
+                <p>Lorem, ipsum dolor.</p>
+                <p>Lorem, ipsum dolor.</p>
+            </div>
+            <div class="redes">
+                <h3>Redes sociales</h3>
+                <div class="iconos__redes">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer__derechos" data-aos="fade-up">
+            <p>Derechos reservados</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         window.addEventListener("scroll", function () {
             var header = document.querySelector(".nav-bg");
@@ -108,7 +291,7 @@
         menutoggle.onclick = function () {
             menutoggle.classList.toggle("cambiar");
         };
-
+        AOS.init();
     </script>
 </body>
 
