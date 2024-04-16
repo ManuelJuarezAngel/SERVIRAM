@@ -290,7 +290,7 @@ h2 {
 
 /* Portada */
 .home {
-    background-image: url('img/portada.jpeg');
+    background-image: url('../img/portada.jpeg');
     background-size: cover;
     background-position: center 63%;
     background-repeat: no-repeat;
@@ -508,7 +508,7 @@ h2 {
 /* Nosotros */
 
 #nosotros {
-    background-image: url('img/nosotros.png');
+    background-image: url('../img/nosotros.png');
     background-size: cover;
     background-position: center 63%;
     background-repeat: no-repeat;
