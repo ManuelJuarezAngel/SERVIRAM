@@ -41,3 +41,25 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
       },
   });
 
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+
+const sr = ScrollReveal({
+  origin:'top',
+  distance: '50px',
+  duration:1500,
+  delay: 500,
+  // reset:true,
+})
+
+sr.reveal(`.home__data`)
+sr.reveal(`.home__handle`, {delay:700})
+sr.reveal(`.home__social, .home__scroll`, {delay:900, origin:'bottom'})
+sr.reveal(`.about__container`, {delay:100})
+sr.reveal(`.frontend`, {delay:100})
+sr.reveal(`.designer`, {delay:200})
+sr.reveal(`.android`, {delay:300})
+sr.reveal(`.services__container`, {delay:100})
+sr.reveal(`.work__container`, {delay:100})
+sr.reveal(`.testimonial__container`, {delay:100})
+sr.reveal(`.contact__container`, {delay:100, origin:'bottom'})
+
