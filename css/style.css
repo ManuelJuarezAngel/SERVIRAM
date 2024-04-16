@@ -761,6 +761,12 @@ button:hover {
         margin-top: -3rem;
     }
 }
+@media (max-width: 436px) {
+
+    .contenido__info {
+        margin-top: -10rem;
+    }
+}
 
 /* Formulario */
 
