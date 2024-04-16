@@ -51,15 +51,11 @@ const sr = ScrollReveal({
   // reset:true,
 })
 
-sr.reveal(`.home__data`)
-sr.reveal(`.home__handle`, {delay:700})
-sr.reveal(`.home__social, .home__scroll`, {delay:900, origin:'bottom'})
-sr.reveal(`.about__container`, {delay:100})
-sr.reveal(`.frontend`, {delay:100})
-sr.reveal(`.designer`, {delay:200})
-sr.reveal(`.android`, {delay:300})
-sr.reveal(`.services__container`, {delay:100})
+sr.reveal(`.home__container`)
+sr.reveal(`.info__mision, .info__vision, .contain__nosotros, .nosotros__logo`, {delay:300, origin:'bottom'})
 sr.reveal(`.work__container`, {delay:100})
-sr.reveal(`.testimonial__container`, {delay:100})
-sr.reveal(`.contact__container`, {delay:100, origin:'bottom'})
+sr.reveal(`.paquetes__card`, {delay:100, origin:'bottom'})
+sr.reveal(`.card__opiniones`, {delay:100, origin:'bottom'})
+sr.reveal(`.testimonial__card`, {delay:100})
+sr.reveal(`.container__form`, {delay:100})
 
