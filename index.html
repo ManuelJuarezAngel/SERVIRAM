@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
     <script src="https://kit.fontawesome.com/9bb43a87dc.js" crossorigin="anonymous"></script>
 </head>
 
@@ -42,7 +44,7 @@
             </div>
         </div>
         <!-- Nosotros -->
-        <section id="nosotros" >
+        <section id="nosotros">
             <div class="contain__nosotros" data-aos="fade-up">
                 <div class="container__info">
                     <h2>● Nosotros</h2>
@@ -67,8 +69,15 @@
         <!-- Servicios -->
         <section class="servicios section" id="servicios">
             <h2 data-aos="fade-up">● Servicios</h2>
-            <div class="services__container" data-aos="fade-up">
-                <div class="service-card">
+            <div class="work__filters" data-aos="fade-up">
+                <span class="work__item active-work" data-filter='all'>Todos</span>
+                <span class="work__item" data-filter='.autos'>Autos</span>
+                <span class="work__item" data-filter='.camiones'>Camiones</span>
+                <span class="work__item" data-filter='.clasicos'>Clasicos</span>
+                <span class="work__item" data-filter='.alfombras'>Alfombras</span>
+            </div>
+            <div class="work__container container grid" data-aos="fade-up">
+                <div class="service-card mix autos">
                     <div class="poster">
                         <img src="img/servicio1.png" />
                     </div>
@@ -85,7 +94,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="service-card">
+                <div class="service-card mix autos">
                     <div class="poster">
                         <img src="img/servicio2.png" />
                     </div>
@@ -102,7 +111,160 @@
                         </div>
                     </div>
                 </div>
-                <div class="service-card">
+                <div class="service-card mix autos">
+                    <div class="poster">
+                        <img src="img/servicio3.png" />
+                    </div>
+                    <div class="services__details">
+                        <h3>Lorem</h3>
+                        <h4>MXN $100,000.00</h4>
+                        <a href="#contacto">Conoce mas</a>
+                        <div class="description">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+                                quos aliquam perferendis quaerat beatae hic sed porro accusamus et
+                                itaque.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card mix camiones">
+                    <div class="poster">
+                        <img src="img/servicio1.png" />
+                    </div>
+                    <div class="services__details">
+                        <h3>Lorem</h3>
+                        <h4>MXN $100,000.00</h4>
+                        <a href="#contacto">Conoce mas</a>
+                        <div class="description">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+                                quos aliquam perferendis quaerat beatae hic sed porro accusamus et
+                                itaque.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card mix camiones">
+                    <div class="poster">
+                        <img src="img/servicio2.png" />
+                    </div>
+                    <div class="services__details">
+                        <h3>Lorem</h3>
+                        <h4>MXN $100,000.00</h4>
+                        <a href="#contacto">Conoce mas</a>
+                        <div class="description">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+                                quos aliquam perferendis quaerat beatae hic sed porro accusamus et
+                                itaque.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card mix camiones">
+                    <div class="poster">
+                        <img src="img/servicio3.png" />
+                    </div>
+                    <div class="services__details">
+                        <h3>Lorem</h3>
+                        <h4>MXN $100,000.00</h4>
+                        <a href="#contacto">Conoce mas</a>
+                        <div class="description">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+                                quos aliquam perferendis quaerat beatae hic sed porro accusamus et
+                                itaque.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card mix clasicos">
+                    <div class="poster">
+                        <img src="img/servicio1.png" />
+                    </div>
+                    <div class="services__details">
+                        <h3>Lorem</h3>
+                        <h4>MXN $100,000.00</h4>
+                        <a href="#contacto">Conoce mas</a>
+                        <div class="description">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+                                quos aliquam perferendis quaerat beatae hic sed porro accusamus et
+                                itaque.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card mix clasicos">
+                    <div class="poster">
+                        <img src="img/servicio2.png" />
+                    </div>
+                    <div class="services__details">
+                        <h3>Lorem</h3>
+                        <h4>MXN $100,000.00</h4>
+                        <a href="#contacto">Conoce mas</a>
+                        <div class="description">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+                                quos aliquam perferendis quaerat beatae hic sed porro accusamus et
+                                itaque.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card mix clasicos">
+                    <div class="poster">
+                        <img src="img/servicio3.png" />
+                    </div>
+                    <div class="services__details">
+                        <h3>Lorem</h3>
+                        <h4>MXN $100,000.00</h4>
+                        <a href="#contacto">Conoce mas</a>
+                        <div class="description">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+                                quos aliquam perferendis quaerat beatae hic sed porro accusamus et
+                                itaque.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card mix alfombras">
+                    <div class="poster">
+                        <img src="img/servicio1.png" />
+                    </div>
+                    <div class="services__details">
+                        <h3>Lorem</h3>
+                        <h4>MXN $100,000.00</h4>
+                        <a href="#contacto">Conoce mas</a>
+                        <div class="description">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+                                quos aliquam perferendis quaerat beatae hic sed porro accusamus et
+                                itaque.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card mix alfombras">
+                    <div class="poster">
+                        <img src="img/servicio2.png" />
+                    </div>
+                    <div class="services__details">
+                        <h3>Lorem</h3>
+                        <h4>MXN $100,000.00</h4>
+                        <a href="#contacto">Conoce mas</a>
+                        <div class="description">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+                                quos aliquam perferendis quaerat beatae hic sed porro accusamus et
+                                itaque.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card mix alfombras">
                     <div class="poster">
                         <img src="img/servicio3.png" />
                     </div>
@@ -120,6 +282,11 @@
                     </div>
                 </div>
             </div>
+            <!-- <div class="services__container" data-aos="fade-up">
+                
+                
+                
+            </div> -->
         </section>
         <section id="paquetes">
             <h2 data-aos="fade-up">● Paquetes</h2>
@@ -254,11 +421,14 @@
     </main>
 
     <footer>
-        <div class="footer__logo" data-aos="fade-up"><p>SERVIRAM</p></div>
+        <div class="footer__logo" data-aos="fade-up">
+            <p>SERVIRAM</p>
+        </div>
         <div class="footer__info" data-aos="fade-up">
             <div class="direccion">
                 <h3>Direccion</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit cumque quisquam nihil eius deserunt dignissimos, autem laboriosam dolore neque ullam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit cumque quisquam nihil eius deserunt
+                    dignissimos, autem laboriosam dolore neque ullam.</p>
             </div>
             <div class="telefonos">
                 <h3>Telefonos</h3>
@@ -273,7 +443,7 @@
                     <a href=""><i class="fa-brands fa-whatsapp"></i></a>
                     <a href=""><i class="fa-brands fa-instagram"></i></a>
                 </div>
-                
+
             </div>
         </div>
         <div class="footer__derechos" data-aos="fade-up">
@@ -293,6 +463,9 @@
         };
         AOS.init();
     </script>
+
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

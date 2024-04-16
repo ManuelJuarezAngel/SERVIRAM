@@ -414,6 +414,147 @@ h2 {
     }
 }
 
+/*=============== WORK ===============*/
+
+.work__container{
+    padding-top: 1rem;
+  }
+  
+  .work__filters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .75rem;
+    margin-bottom: 2rem;
+  }
+  
+  .work__item{
+    cursor: pointer;
+    color: var(--title-color);
+    padding: 1rem;
+    font-weight: var(--font-medium);
+    border-radius: .5rem;
+  }
+  
+  .work__card{
+    background-color: var(--container-color);
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  
+  .work__img{
+    border-radius: 1rem;
+    margin-bottom: .75rem;
+    min-height: 200px;
+  }
+  
+  .work__title{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: .25rem;
+  }
+  
+  .work__button{
+    width: max-content;
+    color: var(--first-color);
+    font-size: var(--small-font-size);
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+  }
+  
+  .work__button:hover .work__icon{
+    transform: translate(.25rem);
+  }
+  
+  .grid {
+    display: grid;
+    gap: 1.25rem;
+  }
+  
+  .work__icon{
+    font-size: 1rem;
+    transition: .4s;
+  }
+  
+  /* Active item work*/
+  
+  .active-work{
+    background-color: var(--color-naranja);
+    color: white;
+    transition: .4s all;
+  }
+
+/* For small devices */
+
+@media screen and (max-width: 320px) {
+    
+    .work__item{
+      font-size: var(--small-font-size);
+    }
+  
+    .work__filters{
+      column-gap: .25rem;
+    }
+  
+  }
+
+/* For medium devices */
+
+@media screen and (min-width: 576px) {
+  
+    .work__container{
+      justify-content: center;
+    }
+  
+    .work__img{
+      width: 295px;
+    }
+  
+    .contact__info{
+      grid-template-columns: 330px;
+      justify-content: center;
+    }
+  
+    .contact__form{
+      width: 360px;
+      margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:767px){
+
+    .work__container{
+      grid-template-columns: repeat(2, max-content);
+    }
+    
+}
+
+/* For large devices */
+
+@media screen and (min-width: 1050px) {
+    .work__container{
+      gap: 3rem;
+    }
+  
+    .work__card{
+      padding: 1.25rem;
+    }
+  
+    .work__img{
+      margin-bottom: 1rem;
+    }
+  
+    .work__title{
+      margin-bottom: .5rem;
+    }
+
+    .work__container{
+        grid-template-columns: repeat(3, max-content);
+      }
+
+}
+
 /* Nosotros */
 
 #nosotros {
