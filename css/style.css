@@ -853,18 +853,38 @@ footer {
 }
 
 /* For small devices */
-
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
 
     .work__item {
         font-size: var(--small-font-size);
     }
 
     .work__filters {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
         column-gap: .25rem;
     }
 
+    .work__item {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }	
+
+    .work__container {
+        grid-template-columns: repeat(1, max-content);
+    }
+
+    .work__container {
+        justify-content: center;
+    }
+
 }
+
+
+
 
 /* For medium devices */
 
@@ -908,6 +928,11 @@ footer {
 
     .work__container {
         gap: 3rem;
+    }
+
+    .work__filters {
+        display: flex;
+        column-gap: .25rem;
     }
 
     .seccction {
