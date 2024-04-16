@@ -56,6 +56,6 @@ sr.reveal(`.info__mision, .info__vision, .contain__nosotros, .nosotros__logo`, {
 sr.reveal(`.work__container`, {delay:100})
 sr.reveal(`.paquetes__card`, {delay:100, origin:'bottom'})
 sr.reveal(`.card__opiniones`, {delay:100, origin:'bottom'})
-sr.reveal(`.testimonial__card`, {delay:100})
-sr.reveal(`.container__form`, {delay:100})
+sr.reveal(`.testimonial__container`, {delay:100})
+sr.reveal(`.container__form`, {delay:100, origin:'bottom'})
 

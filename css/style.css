@@ -23,6 +23,13 @@ html {
     box-sizing: inherit;
 }
 
+/*=============== BASE ===============*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
 body {
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
@@ -38,6 +45,16 @@ section {
     max-width: 130rem;
     margin: 0 auto;
     padding: 2rem;
+}
+
+.seccction {
+    padding: 4.5rem 0 1rem;
+}
+
+.conssstainer {
+    max-width: 968px;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 h1 {
@@ -632,25 +649,20 @@ button:hover {
 }
 
 /*=============== TESTIMONIAL ===============*/
-
-.testimonial__card{
-    box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, .1);
-  }
-
-  .testimonial__card{
+.testimonial__card {
     background-color: var(--color-cafe);
     padding: 1.25rem 1.5rem;
     border-radius: 1.5rem;
     margin-bottom: 3rem;
     margin-top: 1rem;
     color: white;
-  }
+}
 
-  .testimonial__img{
+.testimonial__img {
     width: 60px;
     border-radius: 3rem;
     margin-bottom: 1rem;
-  }
+}
 
 .testimonial__name {
     font-size: large;
@@ -662,14 +674,12 @@ button:hover {
     font-size: small;
 }
 
-/* Swiper class */
-
 .swiper-pagination-bullet {
-    background-color: var(--text-color-light);
+    background-color: var(--color-twob);
 }
 
 .swiper-pagination-bullet-active {
-    background-color: var(--first-color);
+    background-color: var(--color-cafe) !important;
 }
 
 @media(max-width:654px) {
@@ -761,6 +771,7 @@ button:hover {
         margin-top: -3rem;
     }
 }
+
 @media (max-width: 436px) {
 
     .contenido__info {
@@ -890,8 +901,18 @@ footer {
 /* For large devices */
 
 @media screen and (min-width: 1050px) {
+
+    .conssstainer {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .work__container {
         gap: 3rem;
+    }
+
+    .seccction {
+        padding: 6.5rem 0 1rem;
     }
 
     .work__card {
