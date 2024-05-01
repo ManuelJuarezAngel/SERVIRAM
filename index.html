@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="nav-bg">
+    <div class="nav-bg" id="menu">
         <div class="header">
             <div class="logo">SERVIRAM</div>
             <div class="toggle">
@@ -28,20 +28,20 @@
                 <a href="#nosotros">Nosotros</a>
                 <a href="#servicios">Servicios</a>
                 <a href="#paquetes">Paquetes</a>
+                <a href="#galeria">Galeria</a>
                 <a href="#contacto">Contacto</a>
             </nav>
         </div>
     </div>
 
-
     <main>
         <!-- Portada -->
-        <div class="home section" id="home">
+        <section class="home section" id="home">
             <div class="home__container">
                 <h1>Servicio de Detailing y Estética Automotriz Profesional</h1>
                 <p>Cuidamos la estética automotriz con alto detallado y brindamos servicio a domicilio en la Ciudad de México y área Metropolitana.</p>
             </div>
-        </div>
+        </section>
         <!-- Nosotros -->
         <section id="nosotros">
             <div class="contain__nosotros">
@@ -281,12 +281,9 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="services__container" >
-                
-                
-                
-            </div> -->
         </section>
+
+        <!-- Paquetes -->
         <section id="paquetes">
             <h2>● Paquetes</h2>
             <div class="container__paquetes">
@@ -333,6 +330,7 @@
                 </div>
             </div>
         </section>
+        <!-- Testimonios -->
         <section>
             <h2>● Testimonios</h2>
             <div class="container__opiniones">
@@ -392,11 +390,35 @@
             </div>
         </section>
 
-        <!--=============== TESTIMONIALS ===============-->
-        <section class="testimonial seccction">
+        <section id="galeria">
+            <h2>● Galeria</h2>
+            <div class="container__galeria" data-aos="fade-up">
+                <div class="galeria__img">
+                    <img src="img/servicio1.png" alt="img">
+                </div>
+                <div class="galeria__img">
+                    <img src="img/servicio2.png" alt="img">
+                </div>
+                <div class="galeria__img">
+                    <img src="img/servicio3.png" alt="img">
+                </div>
+                <div class="galeria__img">
+                    <img src="img/servicio2.png" alt="img">
+                </div>
+                <div class="galeria__img">
+                    <img src="img/servicio1.png" alt="img">
+                </div>
+                <div class="galeria__img">
+                    <img src="img/servicio3.png" alt="img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Casos de exito -->
+        <section>
             <h2>● Casos de exito</h2>
 
-            <div class="testimonial__container conssstainer swiper">
+            <div class="testimonial__container conssstainer swiper" >
                 <div class="swiper-wrapper">
                     <div class="testimonial__card swiper-slide">
                         <img src="img/testimonial1.webp" alt="testimonial-1" class="testimonial__img">
@@ -428,12 +450,12 @@
                 <div class="swiper-pagination"></div>
             </div>
         </section>
-
+        <!-- Contacto -->
         <section id="contacto">
             <h2>● Contactanos</h2>
             <div class="container__form">
-                <form>
-                    <h3>Envianos tus comentarios</h3> <br>
+                <form action="https://formsubmit.co/manuelangel010625@gmail.com" method="POST">
+                    <h3>Envíanos tus datos y nos <br> pondremos en contacto contigo.</h3> <br>
                     <div class="input-group">
                         <label for=""><span>* </span>Nombre completo</label>
                         <input type="text" name="name" required>
@@ -457,6 +479,15 @@
         </section>
     </main>
 
+    <div id="modal" class="modal">
+        <span class="cerrar"><i class="fa-solid fa-xmark"></i></span>
+        <div class="modal-contenido-img">
+            <img class="modal-contenido" id="imagen-ampliada">
+        </div>
+        <div id="anterior" class="anterior"><i class="fa-solid fa-arrow-left"></i></div>
+        <div id="siguiente" class="siguiente"><i class="fa-solid fa-arrow-right"></i></div>
+    </div>
+    <!-- Footer -->
     <footer>
         <div class="footer__logo">
             <p>SERVIRAM</p>
@@ -484,7 +515,7 @@
             </div>
         </div>
         <div class="footer__derechos">
-            <p>Derechos reservados</p>
+            <p>Hecha con dedicacion por Ryutec</p>
         </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -500,8 +531,6 @@
         };
         AOS.init();
     </script>
-
-    <!--=============== SCROLLREVEAL ===============-->
     <script src="js/scrollreveal.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/mixitup.min.js"></script>
